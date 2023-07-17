@@ -1,0 +1,418 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: #000000;
+  
+}
+.avtar{
+  background-size:contain;
+  max-width: 1500px;
+  
+}
+.banner{
+  background-size:contain;
+  max-width: 4500px;
+  background-position: center center;
+  color: white;
+  object-fit: contain;
+  height: 680px;
+  margin-left: 30px;
+  padding-top: -100px;
+  height:190px;
+  position: absolute;
+  top: 550px;
+  left: 120px;
+  
+}
+.banner-title{
+  position: absolute;
+  top: -270px;
+  font-size: 55px;
+}
+.button {
+  position: absolute;
+  top: 470px;
+  left: 155px;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 10px 20px;
+  color: #ffffff;
+  background-color: transparent;
+  border: 2px solid grey;
+  border-radius: 0px;
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.23, 1, 0.320, 1);
+  overflow: hidden;
+}
+
+.button::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #464242;
+  top: 0%;
+  left: -100%;
+  scale: 1;
+  border-radius: inherit;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.button span {
+  transition: all 0.7s;
+  position: relative;
+  overflow: hidden;
+}
+
+.button span::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  color: #000000;
+  width: 0;
+  overflow: hidden;
+}
+
+.button:hover span::before {
+  width: 100%;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  transition-delay: 0.4s;
+}
+
+.button:hover::before {
+  scale: 1;
+  top: 0%;
+  left: 0%;
+}
+
+.button:hover {
+  border-color: transparent;
+}
+
+.button:active {
+  scale: 0.9;
+}
+.button2 {
+  position: absolute;
+  top: 470px;
+  left: 355px;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 10px 20px;
+  color: #ffffff;
+  background-color: transparent;
+  border: 2px solid grey;
+  border-radius: 0px;
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.23, 1, 0.320, 1);
+  overflow: hidden;
+}
+
+.button2::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #464242;
+  top: 0%;
+  left: -100%;
+  scale: 1;
+  border-radius: inherit;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.button2 span {
+  transition: all 0.7s;
+  position: relative;
+  overflow: hidden;
+}
+
+.button2 span::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  color: #000000;
+  width: 0;
+  overflow: hidden;
+}
+
+.button2:hover span::before {
+  width: 100%;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  transition-delay: 0.4s;
+}
+
+.button2:hover::before {
+  scale: 1;
+  top: 0%;
+  left: 0%;
+}
+
+.button2:hover {
+  border-color: transparent;
+}
+
+.button2:active {
+  scale: 0.9;
+}
+.description{
+  
+  font-weight: 400;
+  font-size: 20px;
+}
+.logo{
+  position: absolute;
+  left:150px;
+  top: 38px;
+  width: 160px;
+  
+}
+
+.poster{
+  display:flex;
+  overflow-y: hidden;
+  overflow-x: scroll ;
+  padding: 1px;
+  transition: transform 450ms;                                  
+  max-height: 230px;
+  object-fit: cover;
+  object-fit: contain;
+  width: 300px;
+
+ 
+  }
+  
+.row-posters{
+    display:flex;
+    overflow-y: hidden;
+    overflow-x:scroll ;
+    padding: 1px;
+}  
+.poster:hover{
+    transform: scale(1.09);
+}
+
+.row-posters::-webkit-scrollbar {
+    display:flex;
+}
+
+.posterslar{
+    display:flex;
+    overflow-y: hidden;
+    overflow-x: scroll ;
+    padding: 8px;
+    transition: transform 450ms;                                  
+    max-height: 230px;
+    object-fit: contain;
+    object-fit: cover;
+  width: 300px
+}
+.posterslar:hover{
+    transform: scale(1.08);
+}
+
+.row h1{
+  color:rgb(255, 255, 255);
+  font-size: 25px;
+  font-weight: 200;
+}
+
+.footer-extra-row{
+  display:flex;
+  padding: 15px;
+}
+
+#menuToggle
+{
+  display: block;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle a
+{
+  text-decoration: none;
+  color: #232323;
+  
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover
+{
+  color: rgb(255, 255, 255);
+}
+
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0;
+  z-index: 2; 
+  
+  -webkit-touch-callout: none;
+}
+
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: #cdcdcd;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #fffefe;
+}
+
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+#menu
+{
+  position: absolute;
+  width: 300px;
+  height: 870px;
+  margin: -100px 0 0 -50px;
+  padding: 40px;
+  padding-top: 125px;
+  
+  background:black ;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+ 
+  
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+
+.search-bar input {
+  position: absolute;
+  top:45px;
+  left: 370px;
+  width: 900px;
+  height: 35px;
+  border: none;
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.286);
+  outline: none;
+  color: #fff;
+  font-size: large;
+}
+.searchbutton{
+  width: 40px;
+  position: absolute;
+  top: 43px;
+  left: 1230px;
+}
+
+.threedots{
+  position: absolute;
+  left: 1300px;
+  top: 33px;
+  width: 85px;
+}
+
+
+.footer-row-logo1{
+  width: 30px;
+  position: absolute;
+   left: 90px;
+   top:3090px;
+}
+.footer-row-logo2{
+  width: 40px;
+  position: absolute;
+ left: 140px;
+ top:3090px;
+}
+
+.footer-row-logo3{
+  width: 40px;
+  position: absolute;
+ left: 200px;
+ top:3095px;
+}
+
+.footer-row-logo4{
+  width: 40px;
+  position: absolute;
+ left: 260px;
+ top:3091px;
+}
+
+
+.footer-extra{
+  position: absolute;
+  top: 3150px;
+  left: 42px;
+}
+
+.footer-extra-row{
+ gap:40px; 
+}
