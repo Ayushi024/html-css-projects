@@ -26,12 +26,23 @@ body{
   position: absolute;
   top: 550px;
   left: 120px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+
   
 }
 .banner-title{
   position: absolute;
   top: -270px;
-  font-size: 55px;
+  font-size: 58px;
+  left: 1vw;
+  
+  font-family: Georgia, serif;
+}
+.banner-title1{
+  position: absolute;
+  top: -212px;
+  font-size: 18px;
+  left: 6vw;
 }
 .button {
   position: absolute;
@@ -184,6 +195,7 @@ body{
   object-fit: cover;
   object-fit: contain;
   width: 300px;
+  border-radius:0.8vw
 
  
   }
@@ -193,6 +205,7 @@ body{
     overflow-y: hidden;
     overflow-x:scroll ;
     padding: 1px;
+    
 }  
 .poster:hover{
     transform: scale(1.09);
@@ -211,7 +224,8 @@ body{
     max-height: 230px;
     object-fit: contain;
     object-fit: cover;
-  width: 300px
+  width: 300px;
+  border-radius:0.8vw
 }
 .posterslar:hover{
     transform: scale(1.08);
@@ -280,7 +294,7 @@ body{
   margin-bottom: 5px;
   position: relative;
   
-  background: #cdcdcd;
+  background: #5f5a5a;
   border-radius: 3px;
   
   z-index: 1;
@@ -329,7 +343,7 @@ body{
   padding: 40px;
   padding-top: 125px;
   
-  background:black ;
+  background:rgb(26, 23, 23);
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
  
